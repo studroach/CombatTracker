@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Add Condition"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Condition Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/conditionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Description"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/conditionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="description"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ShortHand"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/conditionSH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="shorthand i.e. poison -> PSN"
+        android:maxLength="3"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/addCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="addCondition"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Remove Condition"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="16dp"/>
+    <EditText
+        android:id="@+id/rmConditionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:onClick="removeCondition"/>
+
+</LinearLayout>

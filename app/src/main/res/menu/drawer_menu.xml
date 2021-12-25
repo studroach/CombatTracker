@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_encounter"
+            android:icon="@drawable/ic_encounter"
+            android:title="Encounters"/>
+        <item
+            android:id="@+id/nav_monster"
+            android:icon="@drawable/ic_monster"
+            android:title="Monsters"/>
+        <item
+            android:id="@+id/nav_player"
+            android:icon="@drawable/ic_player"
+            android:title="Players"/>
+        <item
+            android:id="@+id/nav_condition"
+            android:icon="@drawable/ic_condition"
+            android:title="Conditions"/>
+    </group>
+
+</menu>

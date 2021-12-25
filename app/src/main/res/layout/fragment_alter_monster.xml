@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Add Monster"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Monster Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/monsterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Monster HP"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/monsterHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="HP"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Monster AC"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/monsterAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="AC"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/addMonster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="addMonster"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Remove Monster"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="16dp"/>
+    <EditText
+        android:id="@+id/rmMonsterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+
+    <Button
+        android:id="@+id/rmMonster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:onClick="removeMonster"/>
+
+</LinearLayout>

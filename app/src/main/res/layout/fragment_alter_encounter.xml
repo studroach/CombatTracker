@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Add Encounter"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Encounter Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/encounterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="List Players"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/encounterPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="John, Mary... or &quot;ALL&quot; for all players"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="List Monsters"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/encounterMonsters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="Leviathan, Dragon, Giant Crab..."
+        android:inputType="text"/>
+
+
+    <Button
+        android:id="@+id/addEncounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="addEncounter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Remove Encounter"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="16dp"/>
+    <EditText
+        android:id="@+id/rmEncounterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:hint="name"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+
+    <Button
+        android:id="@+id/rmEncounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:onClick="removeEncounter"/>
+
+</LinearLayout>
